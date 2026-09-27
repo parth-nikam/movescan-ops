@@ -1,0 +1,1 @@
+import {NextResponse} from "next/server";import {requestMockVision} from "@/lib/cv-mock";export async function POST(_:Request,{params}:{params:Promise<{id:string}>}){const{id}=await params;const result=await requestMockVision(id);return NextResponse.json({data:result},{status:202})}

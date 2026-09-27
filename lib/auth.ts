@@ -1,0 +1,1 @@
+export function authorize(request:Request){const id=request.headers.get("oai-authenticated-user-id")??request.headers.get("x-demo-user");const role=request.headers.get("x-demo-role")??"DISPATCHER";return id?{id,role}:{id:"local-demo",role:"ADMIN"};}

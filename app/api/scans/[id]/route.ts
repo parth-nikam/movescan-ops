@@ -1,0 +1,1 @@
+import {NextResponse} from "next/server";import {apiScans} from "@/lib/demo-store";export async function GET(_:Request,{params}:{params:Promise<{id:string}>}){const{id}=await params;const scan=apiScans().find(s=>s.id===id);return scan?NextResponse.json({data:scan}):NextResponse.json({error:{code:"SCAN_NOT_FOUND"}},{status:404})}
