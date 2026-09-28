@@ -2,6 +2,8 @@
 
 **A resilient mobile video-to-inventory vertical slice for residential moving operations.**
 
+**Live demo:** https://movescan-ops-demo.parthnikam.chatgpt.site
+
 This is an independent technical proof of concept inspired by public B2B logistics requirements. It is not MovTexAI software, does not use their branding, and does not claim to implement proprietary computer vision. The vision provider and hosted demo storage are clearly mocked; the production S3 path is implemented behind the same API contract.
 
 ## What it proves
